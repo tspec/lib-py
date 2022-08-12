@@ -1,9 +1,3 @@
-import sys
-from createsteps import extractSpecDeffromfile
-
-def main():
-    filename = sys.argv[1]
-    execute_steps(extractSpecDeffromfile(filename, '*'))
 
 def execute_steps(spec_list: list) -> None:
     module_name = "steps"
@@ -24,6 +18,5 @@ def execute_steps(spec_list: list) -> None:
         else:
             print("No module found")       
 
-
-if __name__ == "__main__":
-    main()
+def dummy():
+    return True
